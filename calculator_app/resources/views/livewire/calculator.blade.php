@@ -17,11 +17,11 @@
        
     <!-- Material Dropdown -->
     
-    <div class="mx-2 mt-22">
+    <div class="mx-6 mt-22">
 
     <form>
         <label class="font-semibold"> Material
-        <select class="block w-full p-4 px-3 m-0 text-base font-normal text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded appearance-none form-select bg-clip-padding border-heather focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Select a Material" wire:model="material">
+        <select class="block w-full p-4 px-3 pr-8 m-0 text-base font-medium text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded opacity-50 form-select bg-clip-padding border-heather focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Select a Material" wire:model="material">
        
             <option value="aa" selected>Choose a material</option>
             <option value="a" selected>ABS</option>
@@ -36,13 +36,14 @@
             <option value="j" selected>PVC Type</option>
             <option value="k" selected>PVC Foam Sheet</option>
             <option value="l" selected>UHMW</option>
+        
         </select>   
         </label> 
         </div>
 
 
     <!-- integer inputs -->
-<div class="grid grid-cols-2 grid-rows-2 mx-2 gap-x-2 gap-y-3">
+<div class="grid grid-cols-2 grid-rows-2 mx-6 gap-x-4 gap-y-4">
    <div> <label class="font-semibold"> Length
     <input class="block w-full p-4 text-base font-normal text-center text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded px bg-clip-padding border-heather" wire:model="length" type="integer" />
     </label></div>
@@ -66,6 +67,7 @@
     class="block w-full p-4 mt-6 font-medium text-white transition duration-150 ease-in-out border border-solid rounded bg-sky-500 hover:bg-sky-300 hover:shadow-lg focus:bg-sky-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-300 active:shadow-lg">Calculate</button>
     </div>
 
+     
 
             </form>
           </div>
