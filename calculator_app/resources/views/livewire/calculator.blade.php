@@ -1,38 +1,27 @@
-<div class="grid place-items-center my-48">
+<div class="grid my-48 place-items-center">
     
-<div class="bg-white border-heather place-content-center border-2 rounded box-content w-96 h-full pb-4">
+<div class="box-content h-full pb-4 bg-white border-2 rounded border-heather place-content-center w-96">
     
-    <img class="my-8 mx-auto" src="{{ asset('img/Piedmont_Logo_No Tagline.png') }}" alt="description of myimage">
+    <img class="mx-auto my-8" src="{{ asset('img/Piedmont_Logo_No Tagline.png') }}" alt="description of myimage">
        
-    <h1 class="text-4x1 text-black font bold text-center bg-gray-200 py-4 mt-8">Sheet Weight Conversion Calculator</h1>
+    <h1 class="py-4 mt-8 text-center text-black bg-gray-200 text-4x1 font bold">Sheet Weight Conversion Calculator</h1>
     
     <!-- weight indicator -->
     
-    <label><h2 class="text-center mt-5 text-lg text-slate-500 font-light"> Weight</h2> </label>
-    <label><h2 class="text-center mt-0 mb-2 text-6xl text-slate-500 font-semibold"> 0 </h2> </label>
+    <label><h2 class="mt-5 text-lg font-light text-center text-slate-500"> Weight</h2> </label>
+    <label><h2 class="mt-0 mb-2 text-6xl font-semibold text-center text-slate-500"> 0 </h2> </label>
     
          
     
    <div>
-       <div class="mx-2 mt-22">
+       
     <!-- Material Dropdown -->
+    
+    <div class="mx-2 mt-22">
+
     <form>
-           <label class="font-semibold"> Material
-        <select class="form-select appearance-none
-        block
-        w-full
-        px-3
-        p-4
-        text-base
-        font-normal
-        text-black
-        bg-white bg-clip-padding bg-no-repeat
-        border border-solid border-heather
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Select a Material" wire:model="material">
+        <label class="font-semibold"> Material
+        <select class="block w-full p-4 px-3 m-0 text-base font-normal text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded appearance-none form-select bg-clip-padding border-heather focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Select a Material" wire:model="material">
        
             <option value="aa" selected>Choose a material</option>
             <option value="a" selected>ABS</option>
@@ -53,58 +42,20 @@
 
 
     <!-- integer inputs -->
-<div class="mx-2 grid grid-rows-2 grid-cols-2 gap-x-2 gap-y-3">
+<div class="grid grid-cols-2 grid-rows-2 mx-2 gap-x-2 gap-y-3">
    <div> <label class="font-semibold"> Length
-    <input class="block
-    text-center
-    w-full
-    px
-    p-4
-    text-base
-    font-normal
-    text-black
-    bg-white bg-clip-padding bg-no-repeat
-    border border-solid border-heather
-    rounded
-    transition
-    ease-in-out" wire:model="length" type="integer" />
+    <input class="block w-full p-4 text-base font-normal text-center text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded px bg-clip-padding border-heather" wire:model="length" type="integer" />
     </label></div>
     
     <div><label class="font-semibold"> Width
-        <input class="block
-        w-full
-        text-center
-        p-4
-        px
-        text-base
-        font-normal
-        text-black
-        bg-white bg-clip-padding bg-no-repeat
-        border border-solid border-heather
-        rounded
-        transition
-        ease-in-out
-        mx-0" wire:model="width" type="integer" />
+        <input class="block w-full p-4 mx-0 text-base font-normal text-center text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded px bg-clip-padding border-heather" wire:model="width" type="integer" />
         </label></div>
 
     
 
     <div>
     <label class="font-semibold"> Thickness (0.25)
-            <input class="block
-            w-full
-            text-center
-            px
-            p-4
-            text-base
-            font-normal
-            text-black
-            bg-white bg-clip-padding bg-no-repeat
-            border border-solid border-heather
-            rounded
-            transition
-            ease-in-out
-            mx-0" wire:model="thickness" type="integer" />
+            <input class="block w-full p-4 mx-0 text-base font-normal text-center text-black transition ease-in-out bg-white bg-no-repeat border border-solid rounded px bg-clip-padding border-heather" wire:model="thickness" type="integer" />
             </label>
         </div>
     
@@ -112,10 +63,14 @@
     <button type="submit"
     data-mdb-ripple="true"
     data-mdb-ripple-color="light"
-    class="block w-full mt-6 p-4 bg-sky-500 text-white font-medium border border-solid rounded hover:bg-sky-300 hover:shadow-lg focus:bg-sky-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-300 active:shadow-lg transition duration-150 ease-in-out">Calculate</button>
+    class="block w-full p-4 mt-6 font-medium text-white transition duration-150 ease-in-out border border-solid rounded bg-sky-500 hover:bg-sky-300 hover:shadow-lg focus:bg-sky-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-300 active:shadow-lg">Calculate</button>
     </div>
-      
-    
+
+
+            </form>
+          </div>
+        </div>
+      </div>
     </form>
 </div>
     </div>
