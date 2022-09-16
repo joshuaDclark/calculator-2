@@ -2,5 +2,5 @@
 product weight calculator
 
 
-https://user-images.githubusercontent.com/31425297/190657461-4fc9ac16-44a7-479b-b074-31224e3dfe52.mov
+https://user-images.githubusercontent.com/31425297/190697046-54b5cef8-b0de-4a46-8cd4-1c5c2f3f7ed3.mov
 
